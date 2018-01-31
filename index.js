@@ -6,11 +6,10 @@ class Driver {
 		this.name = name 
 
 		// insert in the user to the store
-		store.users.push(this)
-	}
-	items(){
-		return store.items.filter(item => {
-			return item.userId === this.id 
+
+	trips(){
+		return trips.filter(trip => {
+			return trip.userId === this.id 
 		})
 	}
 }
