@@ -11,7 +11,7 @@ class Driver {
   }
 
 	trips(){
-		return trips.filter(trip => {
+		return store.trips.filter(trip => {
 			return trip.userId === this.id
 		})
 	}
