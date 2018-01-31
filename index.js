@@ -1,5 +1,7 @@
 let store = {drivers: [], passengers: [], trips: []}
 let driverId = 0
+let passengerId = 0
+let tripId = 0
 
 class Driver {
 	constructor(name){
@@ -26,13 +28,9 @@ class Driver {
 // below contains methoc that returns the user associated with the item
 
 class Passenger {
-	constructor(name, price, user){
-		this.id = ++itemId
+	constructor(name){
+		this.id = ++passengerId
 		this.name = name
-		this.price = price
-		if(user){
-			this.userId = user.id
-		}
 
 		store.items.push(this)
 	}
