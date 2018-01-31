@@ -32,7 +32,7 @@ class Passenger {
 		this.id = ++passengerId
 		this.name = name
 
-		store.items.push(this)
+		store.passengers.push(this)
 	}
 
 	setUser(user){
