@@ -15,6 +15,12 @@ class Driver {
 			return trip.userId === this.id
 		})
 	}
+
+  passengers(){
+		return store.passengers.filter(passenger => {
+			return passenger.userId === this.id
+		})
+	}
 }
 
 // below contains methoc that returns the user associated with the item
