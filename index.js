@@ -7,6 +7,8 @@ class Driver {
 		this.name = name
 
 		// insert in the user to the store
+    store.drivers.push(this)
+  }
 
 	trips(){
 		return trips.filter(trip => {
